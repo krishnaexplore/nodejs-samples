@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "sources": [
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "search": {
+    "dataSource": "searchMiddle",
+    "public": true
+  }
+}

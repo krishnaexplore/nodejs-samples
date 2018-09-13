@@ -1,0 +1,29 @@
+{
+  "searchMiddle": {
+    "name": "searchMiddle",
+    "crud": false,
+    "connector": "rest",
+    "operations": [
+      {
+        "functions": {
+          "search": [
+            "q",
+            "x3TraceId",
+            "x3SpanId"
+          ]
+        },
+        "template": {
+          "method": "GET",
+          "url": "http://localhost:8080/search",
+          "headers": {
+            "X-B3-TraceId": "{x3TraceId}",
+            "X-B3-SpanId": "{x3SpanId}"
+          },
+          "query": {
+            "q" : "{q}"
+          }
+        }
+      }
+    ]
+  }
+}

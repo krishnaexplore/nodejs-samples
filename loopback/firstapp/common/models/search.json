@@ -1,0 +1,19 @@
+{
+  "name": "search",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "plural": "search"
+  },
+  "properties": {
+    "q": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
